@@ -1,0 +1,65 @@
+{
+  "files": [
+    {
+      "nglide21": "https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/nglide21.zip"
+    },
+    {
+      "music-fix": "https://github.com/bangstk/ogg-winmm/releases/download/1.2/fixed_winmm_win10.zip"
+    },
+    {
+      "carmageddon-data": "N/A: Install from Steam or Gog and point the files here:"
+    }
+  ],
+  "game": {
+    "exe": "$GAMEDIR/CARMA2_HW.EXE",
+    "working_dir": "$GAMEDIR"
+  },
+  "installer": [
+    {
+      "extract": {
+        "dst": "$GAMEDIR",
+        "file": "music-fix",
+        "format": "zip"
+      }
+    },
+    {
+      "merge": {
+        "dst": "$GAMEDIR",
+        "format": "zip",
+        "src": "nglide21"
+      }
+    },
+    {
+      "copy": {
+        "dst": "$GAMEDIR",
+        "src": "carmageddon-data"
+      }
+    },
+    {
+      "execute": {
+        "command": "WINEPREFIX=$GAMEDIR/ wine $GAMEDIR/nglide_config.exe",
+        "description": "Nglide first time setup"
+      }
+    },
+    {
+      "task": {
+        "app": "d3dx9_43",
+        "name": "winetricks",
+        "silent": true
+      }
+    }
+  ],
+  "wine": {
+    "Desktop": false,
+    "overrides": {
+      "glide.dll": "n,b",
+      "glide2x.dll": "n,b",
+      "glide3x.dll": "n,b",
+      "libogg-0.dll": "n,b",
+      "liboggvorbis-0.dll": "n,b",
+      "libvorbisfile-3.dll": "n,b",
+      "msvcr90.dll": "n,b",
+      "winmm.dll": "n,b"
+    }
+  }
+}
