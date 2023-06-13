@@ -1,0 +1,2 @@
+#!/bin/bash
+WINEPREFIX=~/.steam/steam/steamapps/compatdata/2822030/ WINEDLLOVERRIDES="libogg-0,liboggvorbis-0,libvorbisfile-3,glide,glide2x,glide3x,msvcp90,msvcr90,winmm=n,b" wine ~/.local/share/steam/steamapps/common/Carmageddon2/nglide_config.exe
