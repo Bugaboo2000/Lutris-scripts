@@ -1,5 +1,5 @@
 files:
-- nglideC1: https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/nglide21.zip
+- nglideC1: https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/NglideC1.zip
 - carmageddon-data: 'N/A: Install from Steam or Gog and point the files here:'
 game:
   exe: $GAMEDIR/DOSBOX/DOSBOX.EXE
@@ -25,3 +25,5 @@ wine:
     glide.dll: n,b
     glide2x.dll: n,b
     glide3x.dll: n,b
+    SDL.dll: n,b
+    SDL_NET.dll: n,b
