@@ -4,7 +4,7 @@ this folder contains files from Nglide v21, dosbox-ece and some useful scripts f
 
 ## Usage
 
-* Install with Lutris:
+* Install with [Lutris](https://lutris.net/games/carmageddon-max-pack/)
 
 ## Using with Steam 
 
@@ -34,13 +34,13 @@ Set executable permissions:
 chmod +x 'fix.sh' nglide_config.sh carma.sh carmahost.sh carmaclient.sh splat.sh splatclient.sh splathost.sh
 ~~~
 
-Open the terminal in your game folder Run fix.sh
+Open the terminal in your game folder Run *fix.sh*
 
 ~~~
 ./fix.sh
 ~~~
 
-Into your Steam, right click on game, Properties and paste these parameters:
+Into your Steam, *right click on game*, *Properties*,*General* and paste these parameters on *Initializing Options*:
 ~~~
  WINEDLLOVERRIDES="3DfxSpl2,glide,glide2x,glide3x,SDL,SDL_net,winmm=n,b" WINEPREFIX=$HOME/.local/share/Steam/steamapps/compatdata/282010/ wine $HOME/.local/share/Steam/steamapps/common/Carmageddon1/DOSBOX/dosbox.exe -conf dosboxCARMA.conf -conf dosboxCARMA_single.conf -noconsole -c %command%
 ~~~
