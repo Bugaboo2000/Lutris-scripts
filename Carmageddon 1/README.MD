@@ -6,8 +6,6 @@ this folder contains files from Nglide v21, dosbox-ece and some useful scripts f
 
 * Install with [Lutris](https://lutris.net/games/carmageddon-max-pack/)
 
-## Using with Steam 
-
 Need to install wine
 
 * Debian and derivatives:
@@ -39,6 +37,8 @@ chmod +x 'fix.sh' nglide_config.sh carma.sh carmahost.sh carmaclient.sh splat.sh
 ~~~
 ./fix.sh
 ~~~
+
+## Using with Steam 
 
 Into your Steam, *right click on game*, *Properties*,*General* and paste these parameters on *Initializing Options*:
 ~~~
