@@ -27,14 +27,14 @@ sudo dnf install wine
 sudo zypper install wine
 ~~~
 
-Download the [zipfile](https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/NglideC1.zip) and extract from your game folder
+### Download the [zipfile](https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/NglideC1.zip) and extract from your game folder
 
 Set executable permissions:
 ~~~
 chmod +x 'fix.sh' nglide_config.sh carma.sh carmahost.sh carmaclient.sh splat.sh splatclient.sh splathost.sh
 ~~~
 
-Open the terminal in your game folder Run *fix.sh*
+### Open the terminal in your game folder and Run *fix.sh*
 
 ~~~
 ./fix.sh
