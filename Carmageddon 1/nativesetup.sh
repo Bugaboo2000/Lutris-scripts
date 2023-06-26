@@ -3,8 +3,7 @@
 
 Setup () {
 
-wget https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/dosbox-ece-x86_64.AppImage
-unzip nglide21.zip -d $HOME/.local/share/Steam/steamapps/common/Carmageddon1/
+wget https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/dosbox-ece-x86_64.AppImage -P $HOME/.local/share/Steam/steamapps/common/Carmageddon1/
 
 }
 
