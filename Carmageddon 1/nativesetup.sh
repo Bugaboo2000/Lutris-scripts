@@ -17,4 +17,5 @@ sed -i "s/fullresolution=.*$/fullresolution=$(xrandr | grep '*' | awk '{print $1
 sed -i 's/memsize=\(.*\)/memsize=512/' $HOME/.local/share/Steam/steamapps/common/Carmageddon1/dosboxCARMA.conf
 sed -i 's/glide=\(.*\)/glide=true/' $HOME/.local/share/Steam/steamapps/common/Carmageddon1/dosboxCARMA.conf
 sed -i 's/glide=\(.*\)/glide=true/' $HOME/.local/share/Steam/steamapps/common/Carmageddon1/dosboxCARMA.conf
+sed -i 's/3dfx.exe/voodo2c.exe -vrush/g' $HOME/.local/share/Steam/steamapps/common/Carmageddon1/dosboxCARMA_single.conf 
 }
