@@ -19,3 +19,8 @@ sed -i 's/glide=\(.*\)/glide=true/' $HOME/.local/share/Steam/steamapps/common/Ca
 sed -i 's/glide=\(.*\)/glide=true/' $HOME/.local/share/Steam/steamapps/common/Carmageddon1/dosboxCARMA.conf
 sed -i 's/3dfx.exe/voodo2c.exe -vrush/g' $HOME/.local/share/Steam/steamapps/common/Carmageddon1/dosboxCARMA_single.conf 
 }
+
+Setup
+wait
+Configs
+chmod +x $HOME/.local/share/Steam/steamapps/common/Carmageddon1/dosbox-ece-x86_64.AppImage
