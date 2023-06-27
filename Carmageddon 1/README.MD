@@ -46,3 +46,21 @@ Into your Steam, *right click on game*, *Properties*,*General* and paste these p
 ~~~
 
 ## Using with native Dosbox
+
+### Download and extract the zipfile
+
+Set executable permissions:
+
+~~~
+chmod +x carmanative.sh nativesetup.sh
+~~~
+
+Open the terminal and run the setup first:
+~~~
+./nativesetup.sh
+~~~
+
+Run the executable:
+
+~~~
+./carmanative.sh
