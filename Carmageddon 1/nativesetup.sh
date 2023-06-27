@@ -3,7 +3,7 @@
 
 Setup () {
 
-wget https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/dosbox-ece-x86_64.AppImage -P $HOME/.local/share/Steam/steamapps/common/Carmageddon1/
+wget https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/dosbox-ece-x86_64.AppImage -P $HOME/.local/share/Steam/steamapps/common/Carmageddon1/DOSBOX/
 
 }
 
@@ -22,4 +22,4 @@ sed -i 's/3dfx.exe/voodo2c.exe -vrush/g' $HOME/.local/share/Steam/steamapps/comm
 Setup
 wait
 Configs
-chmod +x $HOME/.local/share/Steam/steamapps/common/Carmageddon1/dosbox-ece-x86_64.AppImage
+chmod +x $HOME/.local/share/Steam/steamapps/common/Carmageddon1/DOSBOX/dosbox-ece-x86_64.AppImage
