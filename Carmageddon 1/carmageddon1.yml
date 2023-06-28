@@ -2,23 +2,24 @@ files:
 - nglideC1: https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/NglideC1.zip
 - carmageddon-data: 'N/A: Install from Steam or Gog and point the files here:'
 game:
+  args: -conf dosboxCarma.conf -conf dosboxCarma_single.conf -noconsole -c
   exe: $GAMEDIR/DOSBOX/DOSBOX.EXE
+  prefix: $HOME/.local/share/Steam/steamapps/compatdata/282010/
   working_dir: $GAMEDIR
 installer:
 - merge:
     dst: $GAMEDIR
     format: zip
-    src: nglide21
+    src: nglideC1
 - copy:
     dst: $GAMEDIR
     src: carmageddon-data
 - execute:
     command: WINEPREFIX=$GAMEDIR/ wine $GAMEDIR/nglide_config.exe
     description: Nglide first time setup
-- task:
-    app: d3dx9_43
-    name: winetricks
-    silent: true
+system:
+  env:
+    restore_gamma: true 
 wine:
   Desktop: false
   overrides:
