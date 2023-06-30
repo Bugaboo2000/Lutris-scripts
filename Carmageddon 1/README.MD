@@ -45,6 +45,12 @@ Into your Steam, *right click on game*, *Properties*,*General* and paste these p
  WINEDLLOVERRIDES="3DfxSpl2,glide,glide2x,glide3x,SDL,SDL_net,winmm=n,b" WINEPREFIX=$HOME/.local/share/Steam/steamapps/compatdata/282010/ wine $HOME/.local/share/Steam/steamapps/common/Carmageddon1/DOSBOX/dosbox.exe -conf dosboxCARMA.conf -conf dosboxCARMA_single.conf -noconsole -c %command%
 ~~~
 
+You can also use this alternative command:
+
+~~~
+WINEDLLOVERRIDES="3DfxSpl2,glide,glide2x,glide3x,SDL,SDL_net,winmm=n,b" WINEPREFIX=$HOME/.local/share/Steam/steamapps/compatdata/282010/ wine $HOME/.local/share/Steam/steamapps/common/Carmageddon1/DOSBOX/dosbox.exe -conf $HOME/.local/share/Steam/steamapps/common/Carmageddon1/dosboxCARMA.conf -conf $HOME/.local/share/Steam/steamapps/common/Carmageddon1/dosboxCARMA_single.conf -noconsole -c %command%
+~~~
+
 ## Using with native Dosbox
 
 ### Download and extract the zipfile
