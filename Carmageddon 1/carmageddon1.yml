@@ -15,7 +15,8 @@ installer:
     dst: $GAMEDIR
     src: carmageddon-data
 - execute:
-    command: WINEPREFIX=$GAMEDIR/ wine $GAMEDIR/nglide_config.exe
+    chmodx: $GAMEDIR/installerfix.sh
+    command: $GAMEDIR/installerfix.sh
     description: Nglide first time setup
 system:
   env:
