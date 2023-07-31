@@ -3,8 +3,7 @@ files:
 - carmageddon-data: 'N/A: Install from Steam or Gog and point the files here:'
 game:
   args: -conf dosboxCarma.conf -conf dosboxCarma_single.conf -noconsole -c
-  exe: $GAMEDIR/DOSBOX/DOSBOX.EXE
-  prefix: $HOME/.local/share/Steam/steamapps/compatdata/282010/
+  exe: $GAMEDIR/carma.sh
   working_dir: $GAMEDIR
 installer:
 - merge:
@@ -21,11 +20,3 @@ installer:
 system:
   env:
     restore_gamma: true 
-wine:
-  Desktop: false
-  overrides:
-    glide.dll: n,b
-    glide2x.dll: n,b
-    glide3x.dll: n,b
-    SDL.dll: n,b
-    SDL_NET.dll: n,b
