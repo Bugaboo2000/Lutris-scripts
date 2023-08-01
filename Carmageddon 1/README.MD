@@ -4,7 +4,7 @@ this folder contains files from Nglide v21, dosbox-ece and some useful scripts f
 
 ## Usage
 
-* Install with [Lutris](https://lutris.net/games/carmageddon-max-pack/)
+### Install with [Lutris](https://lutris.net/games/carmageddon-max-pack/)
 
 Need to install wine
 
@@ -24,6 +24,8 @@ sudo dnf install wine
 ~~~
 sudo zypper install wine
 ~~~
+
+### Installing manually
 
 ### Download the [zipfile](https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/NglideC1.zip) and extract from your game folder
 
