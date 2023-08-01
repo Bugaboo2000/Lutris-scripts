@@ -27,7 +27,7 @@ sudo zypper install wine
 
 ### Installing manually
 
-## Download the [zipfile](https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/NglideC1.zip) and extract from your game folder
+# Download the [zipfile](https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/NglideC1.zip) and extract from your game folder
 
 Set executable permissions:
 ~~~
