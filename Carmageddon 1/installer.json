@@ -1,0 +1,55 @@
+{
+    "game_slug": "carmageddon-max-pack",
+    "version": "Nglide21",
+    "description": "This installer contains a script that updates to the lattest version of Nglide that have Vulkan support and provide some useful scripts for running the expansions easier with updated version of Nglide",
+    "notes": "Needs wine installed\r\nOnly works with Steam version",
+    "name": "Carmageddon Max Pack",
+    "year": 1998,
+    "steamid": 282010,
+    "gogslug": "carmageddon_max_pack",
+    "humblestoreid": "",
+    "runner": "linux",
+    "slug": "carmageddon-max-pack-nglide21",
+    "installer_slug": "carmageddon-max-pack-nglide21",
+    "script": {
+      "files": [
+        {
+          "nglideC1": "https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/NglideC1.zip"
+        },
+        {
+          "carmageddon-data": "$STEAM:282010:/"
+        }
+      ],
+      "game": {
+        "exe": "$GAMEDIR/carma.sh",
+        "working_dir": "$GAMEDIR"
+      },
+      "installer": [
+        {
+          "extract": {
+            "dst": "$GAMEDIR",
+            "format": "zip",
+            "src": "nglideC1"
+          }
+        },
+        {
+          "copy": {
+            "dst": "$GAMEDIR",
+            "src": "carmageddon-data"
+          }
+        },
+        {
+          "execute": {
+            "chmodx": "$GAMEDIR/installerfix.sh",
+            "command": "bash $GAMEDIR/installerfix.sh",
+            "description": "Nglide first time setup"
+          }
+        }
+      ],
+      "system": {
+        "env": {
+          "restore_gamma": true
+        }
+      }
+    }
+  }

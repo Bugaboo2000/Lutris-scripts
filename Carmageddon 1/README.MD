@@ -6,23 +6,23 @@ this folder contains files from Nglide v21, dosbox-ece and some useful scripts f
 
 ### Install with [Lutris](https://lutris.net/games/carmageddon-max-pack/)
 
-Need to install wine
+Need to install dependencies
 
 * Debian and derivatives:
 ~~~
-sudo apt install wine
+sudo apt install wine wget unzip
 ~~~
 * Arch and derivatives:
 ~~~
-sudo pacman -S wine-staging
+sudo pacman -S wine-staging wget unzip
 ~~~
 * Fedora and derivatives:
 ~~~
-sudo dnf install wine
+sudo dnf install wine wget unzip
 ~~~
 * Suse and derivatives:
 ~~~
-sudo zypper install wine
+sudo zypper install wine wget unzip
 ~~~
 
 ### Installing manually
@@ -42,12 +42,7 @@ chmod +x 'fix.sh' nglide_config.sh carma.sh carmahost.sh carmaclient.sh splat.sh
 
 ## Using with Steam 
 
-Into your Steam, *right click on game*, *Properties*,*General* and paste these parameters on *Initializing Options*:
-~~~
- WINEDLLOVERRIDES="3DfxSpl2,glide,glide2x,glide3x,SDL,SDL_net,winmm=n,b" WINEPREFIX=$HOME/.local/share/Steam/steamapps/compatdata/282010/ wine $HOME/.local/share/Steam/steamapps/common/Carmageddon1/DOSBOX/dosbox.exe -conf dosboxCARMA.conf -conf dosboxCARMA_single.conf -noconsole -c %command%
-~~~
-
-You can also use this alternative command:
+After installing manually, go to your Steam, *right click on game*, *Properties*,*General* and paste these parameters on *Initializing Options*:
 
 ~~~
 WINEDLLOVERRIDES="3DfxSpl2,glide,glide2x,glide3x,SDL,SDL_net,winmm=n,b" WINEPREFIX=$HOME/.local/share/Steam/steamapps/compatdata/282010/ wine $HOME/.local/share/Steam/steamapps/common/Carmageddon1/DOSBOX/dosbox.exe -conf $HOME/.local/share/Steam/steamapps/common/Carmageddon1/dosboxCARMA.conf -conf $HOME/.local/share/Steam/steamapps/common/Carmageddon1/dosboxCARMA_single.conf -noconsole -c %command%

@@ -26,6 +26,7 @@ sed -i 's/glide=\(.*\)/glide=true/' $HOME/.local/share/Steam/steamapps/common/Ca
 }
 
 fssetup() {
+wget https://github.com/Bugaboo2000/Lutris-scripts/releases/download/Layer/NglideC1.zip && unzip NglideC1.zip -d $HOME/.local/share/Steam/steamapps/common/Carmageddon1/
 WINEPREFIX=$HOME/.local/share/Steam/steamapps/compatdata/282010/ WINEDLLOVERRIDES="3DfxSpl2,glide,glide2x,glide3x,winmm=n,b" wine $HOME/.local/share/Steam/steamapps/common/Carmageddon1/DOSBOX/nglide_config.exe
 }
 
