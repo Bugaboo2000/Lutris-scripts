@@ -1,0 +1,43 @@
+files:
+- grapejuice: https://gitlab.com/brinkervii/grapejuice/-/archive/v7.20.11/grapejuice-v7.20.11.zip
+- wine: https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-17/wine-lutris-GE-Proton8-17-x86_64.tar.xz
+game:
+  args: app
+  exe: $GAMEDIR/roblox
+  working_dir: $GAMEDIR
+install_complete_text: Done, now enter in Roblox website(prefer firefox) and select
+  the experience or open Roblox app
+installer:
+- extract:
+    dst: $CACHE
+    file: grapejuice
+    format: zip
+- merge:
+    dst: $GAMEDIR
+    src: $CACHE
+- extract:
+    dst: $CACHE
+    file: wine
+    format: txz
+- merge:
+    dst: $GAMEDIR
+    src: $CACHE
+- chmodx: $GAMEDIR/install.py
+- execute:
+    description: installing grapejuice
+    env:
+      key: ./install.py
+    file: $GAMEDIR/install.py
+    terminal: false
+- execute:
+    command: $HOME/.local/bin/grapejuice app
+    description: first time run of grapejuice
+- chmodx: $HOME/.local/bin/grapejuice
+- execute:
+    command: ln -s $HOME/.local/bin/grapejuice $GAMEDIR/roblox
+    description: creating symbolic link to grapejuice executable
+- chmodx: $GAMEDIR/roblox
+- write_json:
+    data:
+      default_wine_home: $GAMEDIR/lutris-GE-Proton8-17-x86_64/bin/wine64
+    file: $HOME/.config/brinkervii/grapejuice/user_settings.json
