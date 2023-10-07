@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+VIRTUALENV=$_VIRTUALENV
+
+exec $VIRTUALENV/bin/python -m grapejuice gui "$@"

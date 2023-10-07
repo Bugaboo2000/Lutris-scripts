@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Roblox Player
+NoDisplay=true
+Comment=Player for Roblox Experiences
+Icon=$PLAYER_ICON
+Exec=$GRAPEJUICE_EXECUTABLE player %u
+MimeType=x-scheme-handler/roblox-player;x-scheme-handler/roblox;
+Categories=Game;
+StartupWMClass=RobloxPlayer.exe

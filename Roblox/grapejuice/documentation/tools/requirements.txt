@@ -1,0 +1,14 @@
+beautifulsoup4
+black
+emoji
+flask
+html5lib
+jinja2
+libsass
+lxml
+markdown==3.3.7
+mdx_truly_sane_lists
+python-magic
+pyyaml
+watchdog
+Click

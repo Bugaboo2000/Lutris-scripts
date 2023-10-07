@@ -1,0 +1,6 @@
+pytest
+coverage
+pyinstaller
+pylint
+PyGObject-stubs
+validate-pyproject[all]

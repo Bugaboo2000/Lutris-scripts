@@ -1,0 +1,40 @@
+[project]
+name = "grapejuice"
+description = "A wine+Roblox management application"
+keywords = ["grapejuice", "wine", "roblox", "studio", "metaverse"]
+authors = [
+    { name = "BrinkerVII", email = "brinkervii@gmail.com" }
+]
+requires-python = ">=3.7"
+dynamic = [
+    "version",
+    "license",
+    "readme",
+    "urls"
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+
+dependencies = [
+    "psutil",
+    "pip",
+    "PyGObject",
+    "packaging",
+    "wheel",
+    "setuptools",
+    "requests",
+    "Unidecode",
+    "Click",
+    "pydantic"
+]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"

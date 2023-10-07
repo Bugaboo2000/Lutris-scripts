@@ -1,0 +1,738 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: grapejuice\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-03 19:58+0200\n"
+"PO-Revision-Date: 2022-07-09 17:15+0200\n"
+"Last-Translator: BakonBot\n"
+"Language-Team: Serbian\n"
+"Language: sr_RS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.1\n"
+
+#: src/grapejuice/cli/main.py:146
+msgid "Are you sure you want to uninstall Grapejuice? [y/N] "
+msgstr "Да ли сигурно желите да деинсталирате Grapejuice? [д/Н] "
+
+#: src/grapejuice/cli/main.py:151
+msgid ""
+"Remove the Wineprefixes that contain your installations of Roblox? This will "
+"cause all configurations for Roblox to be permanently deleted! [n/Y] "
+msgstr ""
+"Да ли желите да уклоните Wine префиксе који садрже ваше инсталације Roblox-"
+"а? Све конфигурације за Roblox ће бити трајно обрисане! [н/Д] "
+
+#: src/grapejuice/cli/main.py:159
+msgid "Grapejuice has been uninstalled. Have a nice day!"
+msgstr "Grapejuice је деинсталиран. Желимо вам леп дан!"
+
+#: src/grapejuice/cli/main.py:162
+msgid "Uninstallation aborted"
+msgstr "Деинсталација је прекинута"
+
+#: src/grapejuice/components/main_window_components.py:51
+msgid "Start"
+msgstr "Покрени"
+
+#: src/grapejuice/gui_task_manager.py:12
+msgid "This task is already being performed!"
+msgstr "Овај задатак се већ извршава!"
+
+#: src/grapejuice/helpers/background_task_helper.py:95
+#, python-brace-format
+msgid "Grapejuice is running {count} background tasks"
+msgstr "Grapejuice тренутно има {count} покренутих задатака у позадини"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:24
+msgid "Desktop App"
+msgstr "Апликација на радној површи"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:28
+msgid "Studio"
+msgstr "Studio"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:32
+msgid "Experience Player"
+msgstr "Играч искустава"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:47
+msgid "Application Hints"
+msgstr "Наговештаји апликације"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:48
+msgid ""
+"Grapejuice uses application hints to determine which prefix should be used "
+"to launch a Roblox application. If you toggle the hint for a Roblox "
+"application on for this prefix, Grapejuice will use this prefix for that "
+"application."
+msgstr ""
+"Grapejuice користи наговештаје апликације да одреди који префикс треба "
+"користити за покретање Roblox апликације. Ако укључите наговештај за Roblox "
+"апликацију за овај префикс, Grapejuice ће користити тај префикс за ту "
+"апликацију."
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:64
+msgid "Roblox Renderer"
+msgstr "Цртач графике за Roblox"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:90
+msgid "Use PRIME offloading"
+msgstr "Користи PRIME offloading"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:95
+msgid "PRIME offload sink"
+msgstr "PRIME offload sink"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:105
+msgid "Use Mesa OpenGL version override"
+msgstr "Користи замену верзије Mesa OpenGL-а"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:122
+msgid "Graphics Settings"
+msgstr "Подешавања графике"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:123
+msgid ""
+"Grapejuice can assist with graphics performance in Roblox. These are the "
+"settings that control Grapejuice's graphics acceleration features."
+msgstr ""
+"Grapejuice вам може помоћи око графичких перформанси Roblox-а. Ово су "
+"подешавања која контролишу Grapejuice-ове функције убрзања графике."
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:131
+msgid "Wine debugging settings"
+msgstr "Wine подешавања за отклањање грешака"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:132
+msgid ""
+"Wine has an array of debugging options that can be used to improve wine. "
+"Some of them can cause issues, be careful!"
+msgstr ""
+"Wine има низ опција за отклањање грешака које се могу користити за побољшање "
+"Wine-а. Неке од њих могу изазвати проблеме, будите опрезни!"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:137
+msgid "Enable Wine debugging"
+msgstr "Укључи Wine отклањање грешака"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:142
+msgid "WINEDEBUG string"
+msgstr "WINEDEBUG параметар"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:151
+msgid "Third party application integrations"
+msgstr "Интеграције апликација треће стране"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:152
+msgid ""
+"Grapejuice can assist in installing third party tools that will improve the "
+"Roblox experience"
+msgstr ""
+"Grapejuice вам може помоћи у инсталирању алата треће стране који ће "
+"побољшати ваше Roblox искуство"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:156
+msgid "Use Roblox FPS Unlocker"
+msgstr "Користи откључивање FPS-а за Roblox"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:162
+msgid "Use DXVK D3D implementation"
+msgstr "Користи DXVK D3D имплементацију"
+
+#: src/grapejuice/tasks.py:24
+msgid "Launching Roblox Studio"
+msgstr "Покрећем Roblox Studio"
+
+#: src/grapejuice/tasks.py:37
+msgid "Extracting Fast Flags"
+msgstr "Извозим брзе заставице"
+
+#: src/grapejuice/tasks.py:65
+msgid "Opening logs directory"
+msgstr "Отварам директоријум записа"
+
+#: src/grapejuice/tasks.py:76
+msgid "Opening configuration file"
+msgstr "Отварам конфигурациону датотеку"
+
+#: src/grapejuice/tasks.py:84
+msgid "Performing update"
+msgstr "Ажурирам"
+
+#: src/grapejuice/tasks.py:104
+#, python-brace-format
+msgid "Installing Roblox in {prefix}"
+msgstr "Инсталирам Roblox у  {prefix}"
+
+#: src/grapejuice/tasks.py:115
+#, python-brace-format
+msgid "Opening Drive C in {prefix}"
+msgstr "Отварам диск Ц у  {prefix}"
+
+#: src/grapejuice/tasks.py:124
+msgid "Opening Studio's sign-in page"
+msgstr "Отварам страницу за пријављивање у Studio"
+
+#: src/grapejuice/tasks.py:154 src/grapejuice/tasks.py:171
+#, python-brace-format
+msgid "Running {app} in {prefix}"
+msgstr "Покрећем {app} у  {prefix}"
+
+#: src/grapejuice/tasks.py:187
+#, python-brace-format
+msgid "Killing wineserver for {prefix}"
+msgstr "Присилно затварам wineserver за {prefix}"
+
+#: src/grapejuice/tasks.py:215
+#, python-brace-format
+msgid "Installing FPS unlocker in {prefix}"
+msgstr "Инсталирам откључивање FPS-а за {prefix}"
+
+#: src/grapejuice/tasks.py:243
+#, python-brace-format
+msgid "Updating DXVK state for {prefix}"
+msgstr "Ажурирам статус DXVK-а за {prefix}"
+
+#: src/grapejuice/tasks.py:263
+msgid "Preloading XRandR interface"
+msgstr "Превремено учитавам интерфејс XRandR-а"
+
+#: src/grapejuice/windows/exception_viewer.py:87
+msgid "Grapejuice has run into a problem! Please check the details below."
+msgstr ""
+"Grapejuice је наишао на проблем! Молимо вас прочитајте више о проблему доле."
+
+#: src/grapejuice/windows/exception_viewer.py:88
+msgid ""
+"Grapejuice has run into multiple problems! Please check the details below."
+msgstr ""
+"Grapejuice је наишао на више проблема! Молимо вас прочитајте више о "
+"проблемима доле."
+
+#: src/grapejuice/windows/exception_viewer.py:131
+msgid "Export error details"
+msgstr "Извези детаље о проблему"
+
+#: src/grapejuice/windows/exception_viewer.py:164
+msgid "File exists"
+msgstr "Датотека постоји"
+
+#: src/grapejuice/windows/exception_viewer.py:165
+#, python-brace-format
+msgid ""
+"The file '{path}' already exists. Are you sure you want to overwrite it?"
+msgstr "Датотека '{path}' већ постоји. Да ли сигурно желите да је замените?"
+
+#: src/grapejuice/windows/exception_viewer.py:169
+#, python-brace-format
+msgid "Canceled write to '{path}' because the file already exists."
+msgstr "Зауставио сам снимање у '{path}' јер датотека већ постоји."
+
+#: src/grapejuice/windows/exception_viewer.py:186
+#, python-brace-format
+msgid "Successfully saved error information to {path}"
+msgstr "Успешно сам сачувао информације о грешки у {path}"
+
+#: src/grapejuice/windows/fast_flag_editor.py:100
+msgid "Roblox Player"
+msgstr "Roblox Player"
+
+#: src/grapejuice/windows/fast_flag_editor.py:101
+msgid "Roblox Studio"
+msgstr "Roblox Studio"
+
+#: src/grapejuice/windows/fast_flag_editor.py:102
+msgid "Roblox App"
+msgstr "Roblox апликација"
+
+#: src/grapejuice/windows/fast_flag_editor.py:117
+#, python-brace-format
+msgid "Prefix: {prefix}"
+msgstr "Префикс: {prefix}"
+
+#: src/grapejuice/windows/main_window.py:84
+msgid "Checking for a newer version of Grapejuice"
+msgstr "Проверавам да ли постоји новије издање Grapejuice-а"
+
+#: src/grapejuice/windows/main_window.py:94
+msgid "This version of Grapejuice is out of date."
+msgstr "Користите старије издање Grapejuice-а."
+
+#: src/grapejuice/windows/main_window.py:99
+msgid "This version of Grapejuice is from the future"
+msgstr "Користите издање Grapejuice-а из будућности"
+
+#: src/grapejuice/windows/main_window.py:103
+msgid "Grapejuice is up to date"
+msgstr "Користите најновије издање Grapejuice-а"
+
+#: src/grapejuice/windows/main_window.py:272
+msgid "This installation of Grapejuice does not support updating itself."
+msgstr "Ова инсталација Grapejuice-а не подржава самостално ажурирање."
+
+#: src/grapejuice/windows/main_window.py:276
+msgid ""
+"Grapejuice will now update and will re-open after the process has finished.\n"
+"If Grapejuice does not re-open, you might have to redo your source install."
+msgstr ""
+"Grapejuice ће се сада ажурирати и поново покренути након што се процес "
+"заврши.\n"
+"Ако се Grapejuice не покреће, можда ћете морати да поновите инсталацију "
+"програма."
+
+#: src/grapejuice/windows/main_window.py:380
+msgid "Delete Wineprefix"
+msgstr "Обриши Wine префикс"
+
+#: src/grapejuice/windows/main_window.py:381
+#, python-brace-format
+msgid "Do you really want to delete the Wineprefix '{prefix}'?"
+msgstr "Да ли сигурно желите да обришете Wine префикс '{prefix}'?"
+
+#: src/grapejuice/windows/main_window.py:466
+#, python-brace-format
+msgid "New Wineprefix - {n}"
+msgstr "Нови Wine префикс - {n}"
+
+#: src/grapejuice/windows/settings_window.py:44
+msgid "Uninstall Grapejuice"
+msgstr "Деинсталирај Grapejuice"
+
+#: src/grapejuice/windows/settings_window.py:44
+msgid "Are you sure that you want to uninstall Grapejuice?"
+msgstr "Да ли сте сигурни да желите да деинсталирате Grapejuice?"
+
+#: src/grapejuice/windows/settings_window.py:50
+msgid "Remove Wineprefixes?"
+msgstr "Обрисати Wine префиксе?"
+
+#: src/grapejuice/windows/settings_window.py:51
+msgid ""
+"Do you want to remove all the Wineprefixes Grapejuice has created? Doing "
+"this will permanently remove all Roblox program files from this machine. If "
+"you have stored Roblox experiences or models inside of a Wineprefix, these "
+"will be deleted as well. "
+msgstr ""
+"Да ли желите да уклоните све Wine префиксе које је Grapejuice направио? Ово "
+"ће трајно уклонити све Roblox програмске датотеке са овог уређаја. Ако сте "
+"сачували Roblox искуства или моделе унутар Wine префикса, они ће такође бити "
+"избрисани. "
+
+#: src/grapejuice/windows/settings_window.py:59
+msgid ""
+"Grapejuice will now uninstall itself and will close when the process is "
+"finished."
+msgstr ""
+"Grapejuice ће се сада деинсталирати и затворити када процес буде извршен."
+
+#: src/grapejuice/windows/settings_window.py:74
+msgid "Installation Actions"
+msgstr "Радње инсталације"
+
+#: src/grapejuice/windows/settings_window.py:75
+msgid "Manage your Grapejuice installation"
+msgstr "Управљајте својом Grapejuice инсталацијом"
+
+#: src/grapejuice/windows/settings_window.py:79
+#: src/grapejuice/windows/settings_window.py:83
+msgid "Reinstall"
+msgstr "Поново инсталирај"
+
+#: src/grapejuice/windows/settings_window.py:80
+msgid "Performing this action will reinstall Grapejuice."
+msgstr "Извођење ове радње ће поново инсталирати Grapejuice."
+
+#: src/grapejuice/windows/settings_window.py:89
+#: src/grapejuice/windows/settings_window.py:93
+msgid "Uninstall"
+msgstr "Деинсталирај"
+
+#: src/grapejuice/windows/settings_window.py:90
+msgid "Completely remove Grapejuice from your system!"
+msgstr "Потпуно уклоните Grapejuice са вашег уређаја!"
+
+#: src/grapejuice/windows/settings_window.py:106
+msgid "Show Fast Flag warning"
+msgstr "Приказуј упозорење о брзим заставицама"
+
+#: src/grapejuice/windows/settings_window.py:107
+msgid "Should Grapejuice warn you when opening the Fast Flag Editor?"
+msgstr ""
+"Да ли Grapejuice треба да вас упозори када отварате уређивач брзих заставица?"
+
+#: src/grapejuice/windows/settings_window.py:113
+msgid ""
+"This is an advanced debugging feature only meant for people who work on Wine "
+"itself."
+msgstr ""
+"Ово је напредна функција за отклањање грешака намењена само људима који раде "
+"на Wine-у."
+
+#: src/grapejuice/windows/settings_window.py:119
+msgid "Ignore Wine version"
+msgstr "Занемари Wine верзију"
+
+#: src/grapejuice/windows/settings_window.py:124
+msgid "Try profiling hardware"
+msgstr "Покушај да профилишеш хардвер"
+
+#: src/grapejuice/windows/settings_window.py:125
+msgid ""
+"When this setting is enabled, Grapejuice will try profiling your hardware on "
+"startup. This profiling step only happens when the hardware profile is not "
+"set or when the current hardware does not match the previously profiled "
+"hardware. This setting is automatically disabled if hardware profiling fails."
+msgstr ""
+"Када је ово подешавање омогућено, Grapejuice ће покушати да профилише ваш "
+"хардвер при покретању. Овај корак профилисања се дешава само када профил "
+"хардвера није подешен или када се тренутни хардвер не поклапа са претходно "
+"профилисаним хардвером. Ово подешавање је аутоматски онемогућено ако "
+"хардверско профилисање не успе."
+
+#: src/grapejuice/windows/settings_window.py:137
+msgid "Disable self-updater"
+msgstr "Искључи аутоматска ажурирања"
+
+#: src/grapejuice/windows/settings_window.py:143
+msgid "Release Channel"
+msgstr "Главни канал"
+
+#: src/grapejuice/windows/settings_window.py:144
+msgid ""
+"Determines from which branch Grapejuice should be updated. This only works "
+"for source installs."
+msgstr ""
+"Одређује са које гране Grapejuice треба да се ажурира. Ово функционише само "
+"за изворне инсталације."
+
+#: src/grapejuice/windows/settings_window.py:150
+msgid "General"
+msgstr "Опште"
+
+#: src/grapejuice/windows/settings_window.py:151
+msgid "These are general Grapejuice settings"
+msgstr "Ово су општа подешавања Grapejuice-а"
+
+#: src/grapejuice_common/assets/glade/about.glade:11
+msgid "BrinkerVII"
+msgstr "BrinkerVII"
+
+#: src/grapejuice_common/assets/glade/about.glade:12
+msgid "A GUI and wrapper to manage Roblox on Linux running under Wine."
+msgstr ""
+"Графички интерфејс и омотач за управљање Roblox-ом на Линуксу који ради под "
+"програмом Wine."
+
+#: src/grapejuice_common/assets/glade/about.glade:13
+msgid ""
+"This program comes with absolutely no warranty.\n"
+"See the <a href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GNU General "
+"Public Licence, version 3 or later</a> for details."
+msgstr ""
+"Овај програм добијате без икакве гаранције.\n"
+"Погледајте <a href=\"https://www.gnu.org/licenses/gpl-3.0.html\">GNU General "
+"Public Licence, version 3 or later</a> за више детаља."
+
+#: src/grapejuice_common/assets/glade/exception_viewer.glade:33
+msgid "Grapejuice has run into some problems! Please check the details below."
+msgstr ""
+"Grapejuice је наишао на пар проблема! Молимо вас прочитајте више о "
+"проблемима доле."
+
+#: src/grapejuice_common/assets/glade/exception_viewer.glade:48
+msgid "I am supposed to be the title of the problem"
+msgstr "Ја бих требао да будем наслов овог проблема"
+
+#: src/grapejuice_common/assets/glade/exception_viewer.glade:65
+msgid "I am supposed to be a semi-human-readable description of the problem."
+msgstr ""
+"А ја бих требала да будем опис овог проблема који је довољно разумљив за "
+"човека."
+
+#: src/grapejuice_common/assets/glade/exception_viewer.glade:80
+msgid ""
+"Following is the technical mumbo jumbo associated with the error. If it "
+"isn't very useful to you, it might be for the developers or support "
+"volunteers! Click the export button in the top left in order to save the "
+"technical information to a file."
+msgstr ""
+"Следи технички опис о грешки. Можда није корисно вама, али вероватно јесте "
+"програмерима или волонтерима који пружају техничку подршку! Притисните дугме "
+"у горњем левом углу како бисте снимили техничке информације у датотеку."
+
+#: src/grapejuice_common/assets/glade/exception_viewer.glade:140
+msgid "Oh no! Grapejuice ran into a problem!"
+msgstr "О не! Grapejuice је наишао на проблем!"
+
+#: src/grapejuice_common/assets/glade/exception_viewer.glade:144
+msgid "Export"
+msgstr "Извези"
+
+#: src/grapejuice_common/assets/glade/fast_flag_editor.glade:33
+msgid "Fast flag name"
+msgstr "Назив брзе заставице"
+
+#: src/grapejuice_common/assets/glade/fast_flag_editor.glade:144
+msgid "Reset"
+msgstr "Опозови"
+
+#: src/grapejuice_common/assets/glade/fast_flag_editor.glade:184
+msgid "Reload flags from settings"
+msgstr "Поново учитај заставице из подешавања"
+
+#: src/grapejuice_common/assets/glade/fast_flag_editor.glade:198
+msgid "Set all flags to Roblox' defaults"
+msgstr "Подеси све заставице на подразумеване вредности"
+
+#: src/grapejuice_common/assets/glade/fast_flag_editor.glade:223
+msgid "Delete flag files"
+msgstr "Обриши датотеке везане за заставице"
+
+#: src/grapejuice_common/assets/glade/fast_flag_editor.glade:324
+msgid "Fast Flag Editor"
+msgstr "Уређивач брзих заставица"
+
+#: src/grapejuice_common/assets/glade/fast_flag_editor.glade:337
+msgid "Save flags"
+msgstr "Сачувај заставице"
+
+#: src/grapejuice_common/assets/glade/fast_flag_editor.glade:354
+msgid "Undo changes"
+msgstr "Опозови измене"
+
+#: src/grapejuice_common/assets/glade/fast_flag_warning.glade:92
+msgid "If you proceed, the fast flag editor will open."
+msgstr "Ако наставите, уређивач брзих заставица ће се отворити."
+
+#: src/grapejuice_common/assets/glade/fast_flag_warning.glade:106
+msgid ""
+"Fast flags are a way of toggling and changing the behaviour of unreleased "
+"Roblox features.\n"
+"Changing any fast flags, may lead to data corruption and unstable behaviour "
+"of Roblox.\n"
+"<b>You should only use this tool if you know what you are doing!</b>"
+msgstr ""
+"Брзе заставице вам омогућавају да испробате нове могућности Roblox-а које "
+"још нису спремне за широку употребу.  \n"
+"Мењање брзих заставица може довести до губитка података или необичног "
+"понашања Roblox-а.\n"
+"<b>У случају да не разумете сврху брзих заставица које желите да укључите, "
+"немојте користити ову алатку!</b>"
+
+#: src/grapejuice_common/assets/glade/fast_flag_warning.glade:120
+msgid "Read more on the Roblox Developer forum"
+msgstr "Прочитајте више на Roblox-овом форуму за ствараоце"
+
+#: src/grapejuice_common/assets/glade/fast_flag_warning.glade:159
+msgid "Show this dialog before opening the Fast Flag Editor"
+msgstr "Приказуј овај дијалог пре отварања уређивача брзих заставица"
+
+#: src/grapejuice_common/assets/glade/fast_flag_warning.glade:178
+msgid "Open editor"
+msgstr "Отвори уређивач"
+
+#: src/grapejuice_common/assets/glade/fast_flag_warning.glade:204
+msgid "Do not open"
+msgstr "Не отварај"
+
+#: src/grapejuice_common/assets/glade/fast_flag_warning.glade:300
+msgid "WARNING!"
+msgstr "УПОЗОРЕЊЕ!"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:52
+msgid "Grapejuice is running 0 tasks in the background"
+msgstr "Grapejuice тренутно нема покренутих задатака у позадини"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:81
+#: src/grapejuice_common/assets/glade/grapejuice.glade:374
+msgid "Off"
+msgstr "Искључено"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:84
+msgid "1.91"
+msgstr "1.91"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:87
+msgid "1.7"
+msgstr "1.7"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:90
+msgid "1.69"
+msgstr "1.69"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:111
+#: src/grapejuice_common/assets/glade/settings.glade:58
+msgid "Settings"
+msgstr "Подешавања"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:125
+msgid "Open logs directory"
+msgstr "Отвори директоријум записа"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:139
+msgid "Check for updates"
+msgstr "Провери ажурирања"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:163
+msgid "About Grapejuice"
+msgstr "О Grapejuice-у"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:176
+#: src/grapejuice_common/assets/glade/grapejuice.glade:338
+msgid "Documentation"
+msgstr "Документација"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:261
+msgid "Grapejuice"
+msgstr "Grapejuice"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:298
+msgid "Sign in to Studio"
+msgstr "Пријави се у Studio"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:318
+msgid "Open Roblox Studio"
+msgstr "Отвори Roblox Studio"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:377
+msgid "PRIME"
+msgstr "PRIME"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:380
+msgid "NVIDIA PRIME"
+msgstr "NVIDIA PRIME"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:383
+msgid "Optimus"
+msgstr "Optimus"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:394
+msgid "Let Roblox decide"
+msgstr "Допусти Roblox-у да одлучи"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:397
+msgid "Vulkan"
+msgstr "Vulkan"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:400
+msgid "OpenGL"
+msgstr "OpenGL"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:403
+msgid "DirectX 11"
+msgstr "DirectX11"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:423
+msgid "A new version of Grapejuice is available"
+msgstr "Нова верзија Grapejuice-а је доступна"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:435
+msgid "0.0.0 -> 4.0.0"
+msgstr "0.0.0 -> 4.0.0"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:445
+msgid "Update now"
+msgstr "Ажурирај"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:592
+msgid "Grapejuice has run into some trouble. Click to see details."
+msgstr "Grapejuice је наишао на проблем. Кликните како бисте сазнали више."
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:643
+msgid "page0"
+msgstr "страница0"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:651
+msgid "A"
+msgstr "A"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:655
+msgid "page1"
+msgstr "страница1"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:664
+msgid "B"
+msgstr "B"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:668
+msgid "page2"
+msgstr "страница2"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:710
+msgid "Configuration"
+msgstr "Конфигурација"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:724
+msgid "Explorer"
+msgstr "Истраживач датотека"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:738
+msgid "Registry Editor"
+msgstr "Уређивач регистра"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:752
+msgid "Task Manager"
+msgstr "Управљач задацима"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:766
+msgid "Winetricks"
+msgstr "Winetricks"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:791
+msgid "Kill Wineserver"
+msgstr "Присилно затвори Wineserver"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:855
+msgid "Create"
+msgstr "Направи"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:855
+msgid "Initialize"
+msgstr "Иницијализујте"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:868
+msgid "Delete"
+msgstr "Обриши"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:881
+msgid "Save Changes"
+msgstr "Сачувај измене"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:919
+msgid "Install Roblox"
+msgstr "Инсталирај Roblox"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:935
+msgid "Open Drive C"
+msgstr "Отвори диск Ц"
+
+# I have changed "FFlags" to "Fast Flags" since there is no short version I could think of in Serbian.
+#: src/grapejuice_common/assets/glade/grapejuice.glade:951
+msgid "Edit FFlags"
+msgstr "Измени брзе заставице"
+
+#: src/grapejuice_common/assets/glade/grapejuice.glade:1016
+msgid "Wine Apps"
+msgstr "Wine апликације"
+
+#: src/grapejuice_common/assets/glade/grapejuice_components.glade:41
+msgid "0/Infinity"
+msgstr "0/бесконачно"
+
+#: src/grapejuice_common/assets/glade/settings.glade:22
+msgid "Open settings file"
+msgstr "Отвори датотеку са подешавањима"
+
+#: src/grapejuice_common/gtk/gtk_paginator.py:40
+msgid "No model"
+msgstr "Без модела"
+
+#: src/grapejuice_common/gtk/yes_no_dialog.py:3
+msgid "Untitled Dialog"
+msgstr "Неименовани дијалог"
+
+#: src/grapejuice_common/gtk/yes_no_dialog.py:3
+msgid "This is a message"
+msgstr "Ово је порука"
