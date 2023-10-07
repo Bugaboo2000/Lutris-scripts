@@ -23,6 +23,7 @@ install_arch() {
     sudo pacman -S git \
     python-pip \
     python-virtualenv \
+    python-setuptools \
     cairo \
     gtk3 \
     gobject-introspection \
