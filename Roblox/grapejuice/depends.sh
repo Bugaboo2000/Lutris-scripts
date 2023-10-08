@@ -93,3 +93,4 @@ elif [ -x "$(command -v slackpkg)" ]; then
 else
   echo "System Not Supported."
 fi
+
