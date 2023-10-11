@@ -1,1 +1,95 @@
-{"count":1,"next":null,"previous":null,"results":[{"id":28595,"game_id":15308,"game_slug":"roblox","name":"ROBLOX","year":2006,"user":"sparky121","runner":"linux","slug":"roblox-grapejuice","version":"Grapejuice","description":"Grapejuice is a manager that installs and have a set of protocol and file type handlers. These allow you to open games from place files, straight from the Roblox Website and runs Roblox with native Api's like Vulkan or Opengl","notes":"Installing dependencies is needed \r\n\r\nInstall the dependencies first according to your distro:\r\nhttps://brinkervii.gitlab.io/grapejuice/docs/Installing-from-source.html#installing-grapejuice-dependencies\r\n\r\nNeed wine 8.0 or latest\r\n\r\nError code 256\r\n\r\nif you are reinstalling grapejuice, there will probably be a conflict in the settings, so delete the file \"user_settings.json\" located in the folder ~/.config/brinkerviii/grapejuice/\r\n\r\nAudio not working when running Roblox on Lutris\r\n\r\nCheck if you have multiarch enabled in Debian derivated Distros. On Arch Linux derivates, install lib32-libpulse\r\n\r\nError on line 5, missing setuptools\r\n\r\nOn Arch Linux derivates, you need to install python-setuptools\r\n\r\nIncreasing Performance  \r\n\r\nBy default, grapejuice selects the Api according to your hardware, but if you are experiencing issues you to run, you can change to Opengl or Vulkan. To do that open grapejuice, Player, Graphics Settings, Roblox Renderer, and switch the api of your choice.\r\n\r\nYou can also use Esync and Fsync going to \"user_settings.json\" located in the folder ~/.config/brinkerviii/grapejuice/ and adding these parameters inside the \"env\" brackets:\r\n\r\n\"WINEESYNC\": \"1\",\r\n\"WINEFSYNC\": \"1\"","credits":"Brinkervii for grapejuice wrapper","created_at":"2021-07-15T19:16:00.285000Z","updated_at":"2023-09-20T10:19:16.641055Z","draft":false,"published":true,"published_by":1,"rating":"","is_playable":null,"steamid":null,"gogid":null,"gogslug":"","humbleid":"","humblestoreid":"","humblestoreid_real":"","script":{"files":[{"grapejuice":"https://gitlab.com/brinkervii/grapejuice/-/archive/v7.20.11/grapejuice-v7.20.11.zip"}],"game":{"args":"app","exe":"$GAMEDIR/roblox","working_dir":"$GAMEDIR"},"install_complete_text":"Done, now enter in Roblox website(prefer firefox) and select the experience or open Roblox app","installer":[{"extract":{"dst":"$CACHE","file":"grapejuice","format":"zip"}},{"merge":{"dst":"$GAMEDIR","src":"$CACHE"}},{"chmodx":"$GAMEDIR/install.py"},{"execute":{"description":"installing grapejuice","env":{"key":"./install.py"},"file":"$GAMEDIR/install.py","terminal":false}},{"execute":{"command":"$HOME/.local/bin/grapejuice app","description":"first time run of grapejuice"}},{"chmodx":"$HOME/.local/bin/grapejuice"},{"execute":{"command":"ln -s $HOME/.local/bin/grapejuice $GAMEDIR/roblox","description":"creating symbolic link to grapejuice executable"}},{"chmodx":"$GAMEDIR/roblox"}]},"content":"files:\n- grapejuice: https://gitlab.com/brinkervii/grapejuice/-/archive/v7.20.11/grapejuice-v7.20.11.zip\ngame:\n  args: app\n  exe: $GAMEDIR/roblox\n  working_dir: $GAMEDIR\ninstall_complete_text: Done, now enter in Roblox website(prefer firefox) and select\n  the experience or open Roblox app\ninstaller:\n- extract:\n    dst: $CACHE\n    file: grapejuice\n    format: zip\n- merge:\n    dst: $GAMEDIR\n    src: $CACHE\n- chmodx: $GAMEDIR/install.py\n- execute:\n    description: installing grapejuice\n    env:\n      key: ./install.py\n    file: $GAMEDIR/install.py\n    terminal: false\n- execute:\n    command: $HOME/.local/bin/grapejuice app\n    description: first time run of grapejuice\n- chmodx: $HOME/.local/bin/grapejuice\n- execute:\n    command: ln -s $HOME/.local/bin/grapejuice $GAMEDIR/roblox\n    description: creating symbolic link to grapejuice executable\n- chmodx: $GAMEDIR/roblox\n","discord_id":"363445589247131668"}]}
+{
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 28595,
+            "game_id": 15308,
+            "game_slug": "roblox",
+            "name": "ROBLOX",
+            "year": 2006,
+            "user": "sparky121",
+            "runner": "linux",
+            "slug": "roblox-grapejuice",
+            "version": "Grapejuice",
+            "description": "Grapejuice is a manager that installs and have a set of protocol and file type handlers. These allow you to open games from place files, straight from the Roblox Website and runs Roblox with native Api's like Vulkan or Opengl",
+            "notes": "Installing dependencies is needed \r\n\r\nInstall the dependencies first according to your distro:\r\nhttps://brinkervii.gitlab.io/grapejuice/docs/Installing-from-source.html#installing-grapejuice-dependencies\r\n\r\nNeed wine 8.0 or latest\r\n\r\nError code 256\r\n\r\nif you are reinstalling grapejuice, there will probably be a conflict in the settings, so delete the file \"user_settings.json\" located in the folder ~/.config/brinkerviii/grapejuice/\r\n\r\nAudio not working when running Roblox on Lutris\r\n\r\nCheck if you have multiarch enabled in Debian derivated Distros. On Arch Linux derivates, install lib32-libpulse\r\n\r\nError on line 5, missing setuptools\r\n\r\nOn Arch Linux derivates, you need to install python-setuptools\r\n\r\nIncreasing Performance  \r\n\r\nBy default, grapejuice selects the Api according to your hardware, but if you are experiencing issues you to run, you can change to Opengl or Vulkan. To do that open grapejuice, Player, Graphics Settings, Roblox Renderer, and switch the api of your choice.\r\n\r\nYou can also use Esync and Fsync going to \"user_settings.json\" located in the folder ~/.config/brinkerviii/grapejuice/ and adding these parameters inside the \"env\" brackets:\r\n\r\n\"WINEESYNC\": \"1\",\r\n\"WINEFSYNC\": \"1\"",
+            "credits": "Brinkervii for grapejuice wrapper",
+            "created_at": "2021-07-15T19:16:00.285000Z",
+            "updated_at": "2023-09-20T10:19:16.641055Z",
+            "draft": false,
+            "published": true,
+            "published_by": 1,
+            "rating": "",
+            "is_playable": null,
+            "steamid": null,
+            "gogid": null,
+            "gogslug": "",
+            "humbleid": "",
+            "humblestoreid": "",
+            "humblestoreid_real": "",
+            "script": {
+                "files": [
+                    {
+                        "grapejuice": "https://gitlab.com/brinkervii/grapejuice/-/archive/v7.20.11/grapejuice-v7.20.11.zip"
+                    }
+                ],
+                "game": {
+                    "args": "app",
+                    "exe": "$GAMEDIR/roblox",
+                    "working_dir": "$GAMEDIR"
+                },
+                "install_complete_text": "Done, now enter in Roblox website(prefer firefox) and select the experience or open Roblox app",
+                "installer": [
+                    {
+                        "extract": {
+                            "dst": "$CACHE",
+                            "file": "grapejuice",
+                            "format": "zip"
+                        }
+                    },
+                    {
+                        "merge": {
+                            "dst": "$GAMEDIR",
+                            "src": "$CACHE"
+                        }
+                    },
+                    {
+                        "chmodx": "$GAMEDIR/install.py"
+                    },
+                    {
+                        "execute": {
+                            "description": "installing grapejuice",
+                            "env": {
+                                "key": "./install.py"
+                            },
+                            "file": "$GAMEDIR/install.py",
+                            "terminal": false
+                        }
+                    },
+                    {
+                        "execute": {
+                            "command": "$HOME/.local/bin/grapejuice app",
+                            "description": "first time run of grapejuice"
+                        }
+                    },
+                    {
+                        "chmodx": "$HOME/.local/bin/grapejuice"
+                    },
+                    {
+                        "execute": {
+                            "command": "ln -s $HOME/.local/bin/grapejuice $GAMEDIR/roblox",
+                            "description": "creating symbolic link to grapejuice executable"
+                        }
+                    },
+                    {
+                        "chmodx": "$GAMEDIR/roblox"
+                    }
+                ]
+            },
+            "content": "files:\n- grapejuice: https://gitlab.com/brinkervii/grapejuice/-/archive/v7.20.11/grapejuice-v7.20.11.zip\ngame:\n  args: app\n  exe: $GAMEDIR/roblox\n  working_dir: $GAMEDIR\ninstall_complete_text: Done, now enter in Roblox website(prefer firefox) and select\n  the experience or open Roblox app\ninstaller:\n- extract:\n    dst: $CACHE\n    file: grapejuice\n    format: zip\n- merge:\n    dst: $GAMEDIR\n    src: $CACHE\n- chmodx: $GAMEDIR/install.py\n- execute:\n    description: installing grapejuice\n    env:\n      key: ./install.py\n    file: $GAMEDIR/install.py\n    terminal: false\n- execute:\n    command: $HOME/.local/bin/grapejuice app\n    description: first time run of grapejuice\n- chmodx: $HOME/.local/bin/grapejuice\n- execute:\n    command: ln -s $HOME/.local/bin/grapejuice $GAMEDIR/roblox\n    description: creating symbolic link to grapejuice executable\n- chmodx: $GAMEDIR/roblox\n",
+            "discord_id": "363445589247131668"
+        }
+    ]
+}
