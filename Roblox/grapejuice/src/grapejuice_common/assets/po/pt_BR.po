@@ -60,14 +60,6 @@ msgstr "Player de Experiência"
 msgid "Application Hints"
 msgstr "Uso do Prefixo"
 
-#: src/grapejuice/helpers/prefix_feature_toggles.py:59
-msgid "Roblox Settings"
-msgstr " Configurações do Roblox"
-
-#: src/grapejuice/helpers/prefix_feature_toggles.py:60
-msgid "Roblox has some 'secret' launch options. You can change those here. Be careful!"
-msgstr "Roblox tem algumas opções de lançamento secretas. Você pode mudá-las aqui. Tenha cuidado!" 
-
 #: src/grapejuice/helpers/prefix_feature_toggles.py:48
 msgid ""
 "Grapejuice uses application hints to determine which prefix should be used "
@@ -145,24 +137,6 @@ msgstr "Usar Roblox FPS Unlocker"
 #: src/grapejuice/helpers/prefix_feature_toggles.py:162
 msgid "Use DXVK D3D implementation"
 msgstr "Usar DXVK para implementar D3D"
-
-#: src/grapejuice/helpers/prefix_feature_toggles.py:193
-msgid "Install MS Edge Webview2"
-msgstr "Instalar Ms Edge Webview2"
-
-#:src/grapejuice/helpers/prefix_feature_toggles.py:195
-msgid "Clicking this option installs the Microsoft Edge Webview2 Windows component. This is "
-
-
-msgstr "Clicar nessa opção instala o componente Windows Microsoft Edge Webview2"
-
-#: src/grapejuice/helpers/prefix_feature_toggles.py:193
-msgid "required to run Studio. The installer is broken on Wine, so you will have to kill it "
-msgstr "necessário para rodar o Studio. Esse instalador está quebrado no Wine, então você terá de mata-lô"
-
-#: src/grapejuice/helpers/prefix_feature_toggles.py:193
-msgid "manually."
-msgstr "manualmente."
 
 #: src/grapejuice/tasks.py:24
 msgid "Launching Roblox Studio"

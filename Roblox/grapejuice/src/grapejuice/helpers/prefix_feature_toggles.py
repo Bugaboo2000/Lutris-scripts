@@ -131,6 +131,13 @@ def _graphics_settings(prefix: Wineprefix) -> Optional[GrapeSettingsGroup]:
             )
         ]
 
+    def _feral_gamemode():
+        return GrapeSetting(
+            key="use_feral_gamemode",
+            display_name=_("Use Feral Gamemode"),
+            value=prefix.configuration.use_feral_gamemode
+        )
+
     def _mesa_gl_override():
         return GrapeSetting(
             key="use_mesa_gl_override",
@@ -143,6 +150,7 @@ def _graphics_settings(prefix: Wineprefix) -> Optional[GrapeSettingsGroup]:
         [
             _renderer_setting(),
             *_fps_settings(),
+            _feral_gamemode(),
             _mesa_gl_override(),
             *_prime_offload_sink()
         ]

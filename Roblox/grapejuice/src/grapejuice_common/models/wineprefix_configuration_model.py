@@ -40,6 +40,7 @@ class WineprefixConfigurationModel(pydantic_v1.BaseModel):
     disable_edge_update: bool = True
     prime_offload_sink: int = -1
     use_mesa_gl_override: bool = False
+    use_feral_gamemode: bool = False
     enable_winedebug: bool = False
     winedebug_string: str = ""
     roblox_release_channel: RobloxReleaseChannel = RobloxReleaseChannel.LIVE

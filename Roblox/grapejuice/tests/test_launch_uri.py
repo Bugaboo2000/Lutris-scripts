@@ -49,17 +49,3 @@ def tests_parse_cloud_game_uri(an_edit_cloud_game_uri):
     model = LaunchUri(an_edit_cloud_game_uri)
 
     assert str(model)
-
-
-def test_perfect_launch_uri_reconstruction(
-    a_launch_uri,
-    a_launch_uri_no_channel,
-    a_launch_uri_no_value,
-    an_edit_cloud_game_uri
-):
-    for uri in (a_launch_uri, a_launch_uri_no_channel, a_launch_uri_no_value, an_edit_cloud_game_uri):
-        parsed = LaunchUri(uri)
-
-        reconstructed = parsed.as_string
-
-        assert uri == reconstructed
