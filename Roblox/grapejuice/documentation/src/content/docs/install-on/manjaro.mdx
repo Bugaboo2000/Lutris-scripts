@@ -1,0 +1,60 @@
+---
+title: Install Grapejuice on Manjaro
+description: Installation guide for installing Grapejuice on Manjaro Linux
+---
+
+import Tip from "/src/components/Tip.svelte"
+
+import WinePreamble from "/src/partials/wine-preamble.svelte"
+import ThirtyTwoBit from "/src/partials/32bit-arch.md"
+import ArchPackage from "/src/partials/package-arch.mdx"
+import ArchSource from "/src/partials/source-arch.md"
+import PostInstallation from "/src/partials/finito.md"
+import FlatpakReference from "/src/partials/flatpak-reference.mdx"
+
+This document will guide you through the steps of installing Grapejuice on Manjaro. Please read it in its entirety, from top to bottom.
+
+## Installation options
+
+The follwing Grapejuice installation methods can be used to install Grapejuice on Manjaro:
+- Source Installation
+- Package
+- Flatpak
+
+It is recommended you pick either the **Package** option or the **Flatpak** option. Do not install multiple methods at the same time as it will cause conflicts!
+
+## Install Grapejuice using Flatpak
+<FlatpakReference />
+
+## Enable 32-bit support
+<ThirtyTwoBit />
+
+## Install Wine
+<WinePreamble distroId="Manjaro" distroName="Manjaro Linux" />
+
+```sh
+pacman -S wine-staging
+```
+
+## Install the Grapejuice package
+Manjaro is a distribution that is meant to be user friendly. Because of that, you can either install the Grapejuice package using the graphical user interface, or the terminal.
+
+### Using the graphical user interface
+- Open the graphical package manager
+- Go to settings, enable the AUR
+- Search for Grapejuice
+- Install Grapejuice
+
+{/* TODO: extend these instructions with screenshots */}
+
+### Using the terminal
+<ArchPackage />
+
+## Installing Grapejuice from source
+<Tip type="danger">
+    This method is not recommended for your Distribution. Do not run these commands if you do not know what you are doing!
+</Tip>
+<ArchSource />
+
+## After Installation
+<PostInstallation />

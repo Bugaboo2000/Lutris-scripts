@@ -1,0 +1,51 @@
+---
+title: Install Grapejuice on Steam OS
+description: Installation guide for installing Grapejuice on Steam OS Linux
+---
+
+import Tip from "/src/components/Tip.svelte"
+import WinePreamble from "/src/partials/wine-preamble.svelte"
+import PostInstallation from "/src/partials/finito.md"
+import FlatpakReference from "/src/partials/flatpak-reference.mdx"
+import ThirtyTwoBit from "/src/partials/32bit-arch.md"
+import ArchPackage from "/src/partials/package-arch.mdx"
+import ArchSource from "/src/partials/source-arch.md"
+
+This document will guide you through the steps of installing Grapejuice on Steam OS. Please read it in its entirety, from top to bottom.
+
+## Installation options
+
+The follwing Grapejuice installation methods can be used to install Grapejuice on Steam OS:
+- Flatpak
+- Package
+- Source Installation
+
+It is recommended you install Grapejuice on SteamOS using **Flatpak**. The other methods listed do work, but the changes made by those methods will revert every time you update Steam OS or your Steam Deck. 
+
+## Install Grapejuice using Flatpak
+Note that flatpak is already enabled by default on your Steam Deck. You should be able to find Grapejuice in the softare store that comes with Steam OS.
+If you cannot find it, you can proceed with the generic flatpak instuctions.
+
+<FlatpakReference />
+
+## Enable 32-bit support
+<ThirtyTwoBit />
+
+## Install Wine
+<WinePreamble distroId="Arch" distroName="Arch Linux" />
+
+```sh
+pacman -S wine-staging
+```
+
+## Install the Grapejuice package
+<ArchPackage />
+
+## Installing Grapejuice from source
+<Tip type="danger">
+    This method is not recommended for your Distribution. Do not run these commands if you do not know what you are doing!
+</Tip>
+<ArchSource />
+
+## After Installation
+<PostInstallation />

@@ -57,15 +57,13 @@ def _app_hints(prefix: Wineprefix) -> GrapeSettingsGroup:
 
 
 def _roblox_settings(prefix: Wineprefix) -> GrapeSettingsGroup:
-    # TODO: Update translations
-
     return GrapeSettingsGroup(
-        title="Roblox Settings",
-        description="Roblox has some 'secret' launch options. You can change those here. Be careful!",
+        title=_("Roblox Settings"),
+        description=_("Roblox has some 'secret' launch options. You can change those here. Be careful!"),
         settings=[
             GrapeSetting(
                 key="roblox_release_channel",
-                display_name="Roblox release channel",
+                display_name=_("Roblox release channel"),
                 value=RobloxReleaseChannel(prefix.configuration.roblox_release_channel),
                 value_type=RobloxReleaseChannel
             )
@@ -91,12 +89,12 @@ def _graphics_settings(prefix: Wineprefix) -> Optional[GrapeSettingsGroup]:
         return [
             GrapeSetting(
                 key="roblox_set_target_fps",
-                display_name="Set target FPS",
+                display_name=_("Set target FPS"),
                 value=prefix.configuration.roblox_set_target_fps
             ),
             GrapeSetting(
                 key="roblox_scheduler_target_fps",
-                display_name="Target FPS",
+                display_name=_("Target FPS"),
                 value=prefix.configuration.roblox_scheduler_target_fps
             ),
         ]
@@ -131,11 +129,29 @@ def _graphics_settings(prefix: Wineprefix) -> Optional[GrapeSettingsGroup]:
             )
         ]
 
+
+
     def _feral_gamemode():
         return GrapeSetting(
             key="use_feral_gamemode",
             display_name=_("Use Feral Gamemode"),
             value=prefix.configuration.use_feral_gamemode
+        )
+
+    def _enable_esync():
+        return GrapeSetting(
+            key="use_enable_esync",
+            display_name=_("Enable Esync"),
+            value=prefix.configuration.use_enable_esync
+
+        )
+
+    def _enable_fsync():
+        return GrapeSetting(
+            key="use_enable_fsync",
+            display_name=_("Enable Fsync"),
+            value=prefix.configuration.use_enable_fsync
+
         )
 
     def _mesa_gl_override():
@@ -151,6 +167,8 @@ def _graphics_settings(prefix: Wineprefix) -> Optional[GrapeSettingsGroup]:
             _renderer_setting(),
             *_fps_settings(),
             _feral_gamemode(),
+            _enable_esync(),
+            _enable_fsync(),
             _mesa_gl_override(),
             *_prime_offload_sink()
         ]
@@ -202,13 +220,13 @@ def _third_party(prefix: Wineprefix):
             ),
             GrapeSetting(
                 key="install-ms-edge-webview2",
-                display_name="Install MS Edge Webview2",
-                description="Clicking this option installs the Microsoft Edge Webview2 Windows component. This is "
+                display_name=_("Install MS Edge Webview2"),
+                description=_("Clicking this option installs the Microsoft Edge Webview2 Windows component. This is "
                             "required to run Studio. The installer is broken on Wine, so you will have to kill it "
-                            "manually.",
+                            "manually."),
                 value=GrapeSettingAction(
                     key="install-ms-edge-webview2",
-                    display_name="Install MS Edge Webview2",
+                    display_name=_("Install MS Edge Webview2"),
                     action=do_install_edge_webview
                 ),
             )

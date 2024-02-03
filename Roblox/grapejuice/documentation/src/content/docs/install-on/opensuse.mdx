@@ -1,0 +1,53 @@
+---
+title: Install Grapejuice on OpenSUSE
+description: Installation guide for installing Grapejuice on OpenSUSE
+---
+
+import Tip from "/src/components/Tip.svelte"
+
+import WinePreamble from "/src/partials/wine-preamble.svelte"
+import PostInstallation from "/src/partials/finito.md"
+import FlatpakReference from "/src/partials/flatpak-reference.mdx"
+
+This document will guide you through the steps of installing Grapejuice on OpenSUSE. Please read it in its entirety, from top to bottom.
+
+## Installation options
+
+The follwing Grapejuice installation methods can be used to install Grapejuice on OpenSUSE:
+- Flatpak
+- Source Installation
+
+It is recommended you use the **Flatpak** method for OpenSUSE. **Do not** install both multiple at the same time. Doing so will cause conflicts in your system. If you are not sure which method to use, stick to the recommended option.
+
+If, for some obscure reason, the Flatpak version of Grapejuice does not work on your system, you can uninstall the Flatpak and try the source method.
+
+## Install Grapejuice using Flatpak
+<FlatpakReference />
+
+## Install Wine
+You need Wine in order to play Roblox. For OpenSUSE we recommended you follow the instructions on the SUSE wiki.
+See this link: https://en.opensuse.org/Wine#Repositories
+
+## Installing Grapejuice from source
+<Tip type="danger">
+    This method is not recommended for your Distribution. Do not run these commands if you do not know what you are doing!
+</Tip>
+
+First, make sure your system is fully up to date. Following that, install the dependencies required by Grapejuice:
+```sh
+sudo zypper install gettext-runtime git python3-devel python3-pip python3-virtualenv cairo-devel gobject-introspection-devel make xdg-utils gtk3-devel python3-gobject-Gdk
+```
+
+To install Grapejuice from source, you actually need the source first. Download the source code by running this command:
+```sh
+git clone --depth=1 https://gitlab.com/brinkervii/grapejuice.git /tmp/grapejuice
+```
+
+When the git clone command has finished, you can actually install Grapejuice by running these commands:
+```sh
+cd /tmp/grapejuice
+./install.py
+```
+
+## After Installation
+<PostInstallation />

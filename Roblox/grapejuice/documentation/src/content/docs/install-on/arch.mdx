@@ -1,0 +1,49 @@
+---
+title: Install Grapejuice on Arch Linux
+description: Installation guide for installing Grapejuice on Arch Linux
+---
+
+import Tip from "/src/components/Tip.svelte"
+
+import WinePreamble from "/src/partials/wine-preamble.svelte"
+import ThirtyTwoBit from "/src/partials/32bit-arch.md"
+import ArchPackage from "/src/partials/package-arch.mdx"
+import ArchSource from "/src/partials/source-arch.md"
+import PostInstallation from "/src/partials/finito.md"
+import FlatpakReference from "/src/partials/flatpak-reference.mdx"
+
+This document will guide you through the steps of installing Grapejuice on Arch. Please read it in its entirety, from top to bottom.
+
+## Installation options
+
+The follwing Grapejuice installation methods can be used to install Grapejuice on Arch:
+- Source Installation
+- Package
+- Flatpak
+
+It is recommended you pick either the **Package** option or the **Flatpak** option. Do not install multiple methods at the same time as it will cause conflicts!
+
+## Install Grapejuice using Flatpak
+<FlatpakReference />
+
+## Enable 32-bit support
+<ThirtyTwoBit />
+
+## Install Wine
+<WinePreamble distroId="Arch" distroName="Arch Linux" />
+
+```sh
+pacman -S wine-staging
+```
+
+## Install the Grapejuice package
+<ArchPackage />
+
+## Installing Grapejuice from source
+<Tip type="danger">
+    This method is not recommended for your Distribution. Do not run these commands if you do not know what you are doing!
+</Tip>
+<ArchSource />
+
+## After Installation
+<PostInstallation />

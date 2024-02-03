@@ -1,0 +1,56 @@
+---
+title: Using custom Wine builds with Grapejuice
+description: A guide telling you how to use custom Wine builds using Grapejuice
+---
+
+import Tip from "/src/components/Tip.svelte";
+
+<Tip type="warning">
+  This guide is for advanced users. With the current state of Wine you should
+  not have to use custom Wine builds.
+</Tip>
+
+## Concepts
+
+Before you start touching your configuration, you need to know some core concepts.
+
+### Wine Home
+
+The 'Wine Home' is the root directory of a Wine build. This directory should contain folders like `bin`, `lib`, and other folders that you would also find at `/`.
+
+Grapejuice validates your Wine Home. If you use one that's not a proper build of Wine, Grapejuice will give you an errors screen.
+
+### The Grapejuice settings file
+
+Grapejuice stores all settings in the file at `~/.config/brinkervii/grapejuice/user_settings.json`. It is a [JSON](https://www.json.org/json-en.html) formatted file.
+
+## Get a custom Wine build.
+
+To get started, you need to get a custom Wine build. You can either build your own or get one prebuilt from a reputable source. [wine-tkg-git](https://github.com/Frogging-Family/wine-tkg-git) is a good custom build to get started with.
+
+## Open the configuration file
+
+Now you know some concepts, and now you know where the Grapejuice configuration file is, you can get started seting up your custom build.
+The first thing that you'll want to do is close Grapejuice. You do not want Grapejuice and your text editor fighting over the file.
+
+Navigate to the Grapejuice config folder `~/.config/brinkervii/grapejuice/` using your File Manager or Terminal. Then open the `user_settings.json` file with your favourite text editor.
+Make sure you open the file with a text editor that has support for JSON files. If you edit the file with an editor that does not support JSON, you might make mistakes.
+
+## Fill out wine_home fields
+
+You can use custom Wine builds on two levels. Globally or on a prefix level. If you leave the Wine Home fields empty (`""`), Grapejuice will look for Wine installed on your system.
+
+To use a custom Wine build, you need to unpack the archive to some location on your system. After you have unpacked your Wine build, you will want to copy the full path to its root directory (The Wine Home).
+
+If you want to use your custom Wine build for all prefixes, you fill out the `default_wine_home` field with the full path to the Wine Home of your custom Wine builds.
+
+If you want to use your custom Wine build for a specific prefix, you fill out the `wine_home` field for that specific prefix.
+
+## Confirm Wine version
+Before you jump into a Roblox game, you'll want to update the prefix and confirm that it is using your custom build. Open Grapejuice and navigate to the prefix you want to use.
+Click on the 'Wine Apps' button, it will come up with a dropdown. In that dropdown, click 'Configure'.
+
+You should get two Wine windows. One that says its updating your prefix and then one that is the builtin Wine configuration tool.
+You might also get a window asking you to install Mono. Click 'OK' if it pops up.
+
+The Wine configuration tool has an 'About' tab. Click it and confirm that it is indeed the version of Wine that you're expecting.

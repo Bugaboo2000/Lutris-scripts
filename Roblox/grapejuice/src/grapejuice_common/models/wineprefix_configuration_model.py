@@ -41,6 +41,8 @@ class WineprefixConfigurationModel(pydantic_v1.BaseModel):
     prime_offload_sink: int = -1
     use_mesa_gl_override: bool = False
     use_feral_gamemode: bool = False
+    use_enable_esync: bool = False
+    use_enable_fsync: bool = False 
     enable_winedebug: bool = False
     winedebug_string: str = ""
     roblox_release_channel: RobloxReleaseChannel = RobloxReleaseChannel.LIVE

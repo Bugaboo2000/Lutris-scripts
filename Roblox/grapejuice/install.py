@@ -40,7 +40,7 @@ def perform_install():
     subprocess.check_call([find_system_python(), "setup.py", "install_locally"])
 
     unofficial_guide_warning = """WARNING: Unofficial installation guides are not supported! If you did not use the
-    official documentation, found at https://brinkervii.gitlab.io/grapejuice/docs/, Grapejuice may not work properly!
+    official documentation, found at https://brinkervii.gitlab.io/grapejuice, Grapejuice may not work properly!
     Otherwise, if you're using the official documentation or know what you're doing, ignore this message. """
 
     print(unofficial_guide_warning, file=sys.stderr)

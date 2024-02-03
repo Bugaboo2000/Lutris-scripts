@@ -395,6 +395,20 @@ class WineprefixCoreControl:
             else:
                 process_environment["LD_PRELOAD"] += ":libgamemodeauto.so"
 
+        if self._configuration.use_enable_esync:
+            if "WINEESYNC" not in process_environment:
+                process_environment["WINEESYNC"] = "1"
+            else:
+                process_environment["WINEESYNC"] += "1"
+
+        if self._configuration.use_enable_fsync:
+            if "WINEFSYNC" not in process_environment:
+                process_environment["WINEFSYNC"] = "1"
+            else:
+                process_environment["WINEESYNC"] += "1" 
+
+
+
         # Make Wine defined in wine_home available in $PATH
         path_string = process_environment.get("PATH", None) or os.environ.get("PATH", None) or ""
         path_components = path_string.split(os.path.pathsep)
@@ -414,7 +428,6 @@ class WineprefixCoreControl:
                     process_environment[k] = v
 
         return process_environment
-
 
     def load_registry_file(
         self,

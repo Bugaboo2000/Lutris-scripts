@@ -3,13 +3,25 @@ msgstr ""
 "Project-Id-Version: grapejuice\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-17 09:18+0000\n"
-"PO-Revision-Date: 2023-03-17 09:18+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2023-12-30 09:18+0000\n"
+"Last-Translator: Bugaboo2000\n"
 "Language-Team: Portuguese - Brazil\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: src/grapejuice/helpers/prefix_feature_toggle.py:134
+msgid "Use Feral Gamemode"
+msgstr "Usar Feral Gamemode"
+
+#: src/grapejuice/helpers/prefix_feature_toggle.py:141
+msgid "Enable Esync"
+msgstr "Habilitar Esync"
+
+#: src/grapejuice/helpers/prefix_feature_toggle.py:149
+msgid "Enable Fsync"
+msgstr "Habilitar Fsync"
 
 #: src/grapejuice/cli/main.py:146
 msgid "Are you sure you want to uninstall Grapejuice? [y/N] "
@@ -71,9 +83,25 @@ msgstr ""
 "algum aplicativo do Roblox. Se você habilitar algum aplicativo abaixo, o "
 "Grapejuice utilizará esse prefixo para executá-lo."
 
+#: src/grapejuice/helpers/prefix_feature_toggles.py:59
+msgid "Roblox Settings"
+msgstr "Configurações do Roblox"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:59
+msgid "Roblox has some 'secret' launch options. You can change those here. Be careful!"
+msgstr "Roblox tem algumas opções de inicialização secretas. Você pode mudá-las aqui. Tenha cuidado!"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:59
+msgid "Roblox release channel"
+msgstr "Canal de lançamento do Roblox"
+
 #: src/grapejuice/helpers/prefix_feature_toggles.py:64
 msgid "Roblox Renderer"
 msgstr "API Gráfico"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:90
+msgid "Set target FPS"
+msgstr "Definir FPS alvo"
 
 #: src/grapejuice/helpers/prefix_feature_toggles.py:90
 msgid "Use PRIME offloading"
@@ -82,6 +110,10 @@ msgstr "Usar PRIME"
 #: src/grapejuice/helpers/prefix_feature_toggles.py:95
 msgid "PRIME offload sink"
 msgstr "PRIME offload sink"
+
+#: src/grapejuice/helpers/prefix_feature_toggles.py:97
+msgid "Target FPS"
+msgstr "FPS Alvo"
 
 #: src/grapejuice/helpers/prefix_feature_toggles.py:105
 msgid "Use Mesa OpenGL version override"
@@ -137,6 +169,21 @@ msgstr "Usar Roblox FPS Unlocker"
 #: src/grapejuice/helpers/prefix_feature_toggles.py:162
 msgid "Use DXVK D3D implementation"
 msgstr "Usar DXVK para implementar D3D"
+
+#:src/grapejuice/helpers/prefix_feature_toggles.py:195
+msgid "Install MS Edge Webview2"
+msgstr "Instalar MS Edge Webview2"
+
+#:src/grapejuice/helpers/prefix_feature_toggles.py:195
+msgid ""
+"Clicking this option installs the Microsoft Edge Webview2 Windows component. This is "
+"required to run Studio. The installer is broken on Wine, so you will have to kill it "
+"manually."
+msgstr ""
+"Clicar nessa opção instala o componente Windows Microsoft Edge Webview2. Ele é "
+"necessário para rodar o Studio. Esse instalador está quebrado no Wine, então você terá de mata-lô "
+"manualmente."
+
 
 #: src/grapejuice/tasks.py:24
 msgid "Launching Roblox Studio"
@@ -579,6 +626,10 @@ msgstr "Documentação"
 #: src/grapejuice_common/assets/glade/grapejuice.glade:261
 msgid "Grapejuice"
 msgstr "Grapejuice"
+
+#:src/grapejuice_common/assets/glade/grapejuice.glade:297
+msgid "Open Roblox App"
+msgstr " Abrir Roblox App"
 
 #: src/grapejuice_common/assets/glade/grapejuice.glade:298
 msgid "Sign in to Studio"

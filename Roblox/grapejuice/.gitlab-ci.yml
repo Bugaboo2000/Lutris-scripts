@@ -59,13 +59,21 @@ pages:
             - public
     script:
         - pushd ./documentation
-        - make dist
+        - pnpm install
+        - pnpm build
         - popd
         - mkdir public
         - cp -frax ./documentation/dist/* ./public
         - bash ./ci_scripts/update_repositories.sh
-        - bash -c 'source ./documentation/venv/bin/activate && python3 ./documentation/tools/sitemap.py grapejuice public public/sitemap.html'
+        - python3 documentation/make-sitemap.py Grapejuice public
+        - mv sitemap.html public/sitemap.html
         - ls -hal public
+    cache:
+        - key:
+              files:
+                  - documentation/pnpm-lock.yaml
+          paths:
+              - documentation/node_modules
     only:
         - master
 
@@ -73,11 +81,11 @@ make_release:
     stage: release
     image: registry.gitlab.com/gitlab-org/release-cli:latest
     rules:
-        -   if: $CI_COMMIT_TAG
+        - if: $CI_COMMIT_TAG
     script:
         - echo "Running the release job."
     release:
-        name: 'Release $CI_COMMIT_TAG'
-        description: 'Release created using the release-cli.'
-        tag_name: '$CI_COMMIT_TAG'
-        ref: '$CI_COMMIT_TAG'
+        name: "Release $CI_COMMIT_TAG"
+        description: "Release created using the release-cli."
+        tag_name: "$CI_COMMIT_TAG"
+        ref: "$CI_COMMIT_TAG"

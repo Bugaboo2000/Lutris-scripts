@@ -1,0 +1,40 @@
+---
+title: Install Grapejuice on Debian
+description: Installation guide for installing Grapejuice on Debian Linux
+---
+
+import Tip from "/src/components/Tip.svelte"
+
+import WinePreamble from "/src/partials/wine-preamble.svelte"
+import ThirtyTwoBit from "/src/partials/32bit-debian.md"
+import DebianPackage from "/src/partials/package-debian.md"
+import DebianSource from "/src/partials/source-debian.md"
+import PostInstallation from "/src/partials/finito.md"
+
+This document will guide you through the steps of installing Grapejuice on Debian. Please read it in its entirety, from top to bottom.
+
+## Installation options
+
+The follwing Grapejuice installation methods can be used to install Grapejuice on Debian:
+- Source Installation
+- Package
+
+It is recommended you use the **package** method for Debian. **Do not** install both methods at the same time. Doing so will cause conflicts in your system. If you are not sure which method to use, stick to the recommended option.
+
+## Enable 32-bit support
+<ThirtyTwoBit />
+
+## Install Wine
+<WinePreamble distroId="Debian" />
+
+## Install the Grapejuice package
+<DebianPackage />
+
+## Installing Grapejuice from source
+<Tip type="danger">
+    This method is not recommended for your Distribution. Do not run these commands if you do not know what you are doing!
+</Tip>
+<DebianSource />
+
+## After Installation
+<PostInstallation />

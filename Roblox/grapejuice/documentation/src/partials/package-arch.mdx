@@ -1,0 +1,27 @@
+import { Tabs, TabItem } from '@astrojs/starlight/components'
+
+Make sure that your system is up to date and that it is set up to use the [AUR](https://aur.archlinux.org/). It is recommended that you use an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers) to install the Grapejuice package.
+
+There are two variants of the package. A versioned package and a VCS package. The versioned package is called `grapejuice` and the VCS package is called `grapejuice-git`. Be aware that you have to update `grapejuice-git` manually.
+
+Install the `grapejuice` package using your AUR helper of choice.
+
+<Tabs>
+	<TabItem label="Yay">
+    ```sh
+    yay -S grapejuice
+    ```
+    </TabItem>
+	<TabItem label="Paru">
+    ```sh
+    paru -S grapejuice
+    ```
+    </TabItem>
+    <TabItem label="Manual Installation">
+    ```sh
+    git clone https://aur.archlinux.org/packages/grapejuice ~/Downloads/grapejuice
+    cd ~/Downloads/grapejuice
+    makepkg -si
+    ```
+    </TabItem>
+</Tabs>

@@ -15,35 +15,19 @@ Note that Grapejuice is unofficial software. This is not officially supported by
 
 ## Roblox Status
 
-### Player
-
-💚 The anti cheat solution in Roblox now knows how to work in Wine. So the player now works without any issues.
-
-### Studio
-
-🟡 Roblox Studio only seems to be broken for some people. It crashing seems to depend on the system configuration of the
-user. A WineHQ Bugzilla entry has been filed: https://bugs.winehq.org/show_bug.cgi?id=54869
-
-If you get an error launching studio, you can most likely just close it and studio will still launch. Due to Studio
-being flakey, the FFlag editor might not open.
-
-### Microsoft Edge Webiew
-
-🟡 Roblox depends on the Microsoft Edge Webview2. The installer for this Windows component does not always close
-correctly. For now, Grapejuice will block the installation of this component. It is still required for Studio, so there
-is a button to install it in the Grapejuice Gui. You will have to kill the installer yourself when you think its done.
+🔴 Roblox not work currently. A new feature causes system integrity checks to fail on Wine. The result of this is that your client will crash after a couple of minutes of play time.
 
 ---
 
 ## Installing Grapejuice
 
-The installation guides can be found in the [documentation](https://brinkervii.gitlab.io/grapejuice/docs/). Please read
+The installation guides can be found in the [documentation](https://brinkervii.gitlab.io/grapejuice/). Please read
 it thoroughly!
 
 ## Troubleshooting
 
 Are you experiencing some trouble running Roblox Studio with Grapejuice? Please check out
-the [troubleshooting guide](https://brinkervii.gitlab.io/grapejuice/docs/Troubleshooting).
+the [troubleshooting guide](https://brinkervii.gitlab.io/grapejuice/reference/troubleshooting/).
 
 ## Features
 
@@ -59,12 +43,14 @@ the [troubleshooting guide](https://brinkervii.gitlab.io/grapejuice/docs/Trouble
 
 ## Screenshots
 
-
 ### Graphics settings
+
 ![Graphics Settings](readme-images/settings-graphics.png)
 
 ### Third party integrations
+
 ![Integration Settings](readme-images/settings-integrations.png)
 
 ### Shortcuts to common actions
+
 ![Shortcuts](readme-images/settings-shortcuts.png)

@@ -35,7 +35,7 @@ def git_repository():
 
 
 def documentation_link():
-    return "https://brinkervii.gitlab.io/grapejuice/docs/"
+    return "https://brinkervii.gitlab.io/grapejuice"
 
 
 def release_channel():

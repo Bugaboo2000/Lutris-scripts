@@ -1,0 +1,39 @@
+---
+title: Grapejuice
+description: Roblox on Linux, made easy
+template: splash
+hero:
+  tagline: Roblox on Linux, made easy
+  image:
+    file: ../../assets/images/grapejuice.svg
+    alt: "Grapejuice Logo"
+  actions:
+    - text: Get Started Now
+      link: /grapejuice/start-here
+      icon: right-arrow
+      variant: primary
+  # - text: Put some funny link here
+  #   link: https://starlight.astro.build
+  #   icon: external
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+## Features
+
+<CardGrid stagger>
+  <Card title="Browser Integration" icon="star">
+    Connect the Roblox website with the Linux desktop. Launch Roblox on Linux as
+    you would on Windows. Just install Grapejuice and get going!
+  </Card>
+  <Card title="Wine Hotfixes" icon="star">
+    Grapejuice minimises the impact of the quirks of running Roblox on an
+    unsupported platform.
+  </Card>
+  <Card title="Graphical Interface" icon="star">
+    Control Grapejuice features and Wine hotfixes through the Grapejuice GUI.
+  </Card>
+  {/* <Card title="Read the docs" icon="pencil">
+    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  </Card> */}
+</CardGrid>
